@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="kk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><title>«С++ тілінде машинаға бағытталған бағдарламалау» пәні бойынша электрондық оқулық</title><link rel="stylesheet" href="viewer.css"></head>
+<body>
+<header class="toolbar">
+ <button id="menuToggle" class="tool iconbtn" title="Мазмұнды ашу" aria-label="Мазмұнды ашу">☰</button>
+ <div class="brand"><strong>«С++ тілінде машинаға бағытталған бағдарламалау» пәні бойынша</strong><small>Электрондық оқулық</small></div>
+ <div class="tools-spacer"></div>
+ <label class="searchbox"><span>⌕</span><input id="searchInput" placeholder="Іздеу" aria-label="Мазмұннан іздеу"></label>
+ <button id="prevBtn" class="tool" title="Алдыңғы бет">‹</button>
+ <div class="pagecounter"><input id="pageNum" value="1" aria-label="Бет нөмірі"><span>/ <b id="pageCount">127</b></span></div>
+ <button id="nextBtn" class="tool" title="Келесі бет">›</button>
+ <button id="zoomOut" class="tool" title="Кішірейту">−</button><span id="zoomLabel" class="zoomlabel">100%</span><button id="zoomIn" class="tool" title="Үлкейту">＋</button>
+ <button id="fitBtn" class="tool texttool">Сыйдыру</button><button id="themeBtn" class="tool texttool" title="Қараңғы/ашық режим">🌙 Режим</button><button id="contentsBtn" class="tool texttool">Қарау</button>
+ <button id="fullBtn" class="tool texttool">Толық экран</button>
+</header>
+<div class="layout">
+ <aside id="sidebar" class="sidebar" aria-label="Мазмұны">
+  <div class="sidehead"><b>МАЗМҰНЫ</b><button id="closeSidebar" class="closebtn" aria-label="Жабу">×</button></div>
+  <div class="sidehint">Бөлімді ашып, тақырыпты таңдаңыз. Беттің оң жағы — келесі, сол жағы — алдыңғы</div>
+  <div id="tocList" class="toclist"></div>
+ </aside>
+ <main class="stage" id="stage"><div id="loading" class="loading">Оқулық жүктелуде…</div><div id="paperWrap" class="paper-wrap"><canvas id="pdfCanvas"></canvas><div id="pdfLinkLayer" class="pdf-link-layer" aria-label="PDF ішіндегі сілтемелер"></div></div></main>
+</div>
+<footer class="bottom-bar"><button id="bottomPrev" class="tool">‹</button><label class="bottom-page"><input id="bottomPage" value="1" aria-label="Бет нөмірі"><span>/ <b id="bottomCount">127</b></span></label><button id="bottomNext" class="tool">›</button><span class="bottom-spacer"></span><button id="bottomContents" class="tool texttool">Мазмұны</button><button id="bottomFull" class="tool texttool">Толық экран</button></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script><script src="contents-data.js"></script><script src="viewer.js"></script>
+</body></html>
